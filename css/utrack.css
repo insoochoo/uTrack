@@ -1,0 +1,251 @@
+/* Put any additional CSS here */
+body{
+  background-color: #FCFFF5;
+  color: #3C4955;
+}
+
+.top_header {
+  color: #193441;
+  text-align: center;
+  width: 625px;
+  margin: 0 auto 20px auto;
+  /* border-bottom: 1px solid #D1DBBD; */
+}
+
+.err {
+  border: 1px solid rgb(255, 99, 99) !important;
+}
+
+.top_header_nav {
+  margin-left:30px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+  width: 160px;
+}
+.top_header h1{
+  position:relative;
+  top:5px;
+  font-size:40px;
+}
+.top_header h1, .top_header ul {
+  display: inline-block;
+}
+
+.top_header_nav li{
+  display:inline-block;
+  margin:0 10px;
+  font-size:16px;
+  cursor: pointer;
+}
+
+.top_header_nav li:hover{
+  color:#3C4955;
+}
+
+.user_input span {
+  display: block;
+}
+
+.input_div {
+  text-align:center;
+}
+
+#input_div{
+  width: 626px;
+  margin: 0px auto;
+  border: 1px solid rgb(209, 219, 189);
+  background-color: rgba(255, 255, 255, 1);
+  padding-bottom: 30px;
+}
+
+.user_input{
+  list-style:none;
+  margin: 15px auto;
+}
+
+.user_input li{
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.user_input span {
+  font-size: 18px;
+}
+
+.user_input select {
+  height:30px;
+  width:260px;
+}
+
+.user_input input {
+  border: 1px solid rgb(209, 219, 189);
+  border-radius: 5px;
+  height: 30px;
+  width: 260px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.bottom_bar {
+  text-align: center;
+}
+
+.bottom_bar #input_submit {
+  border: 1px solid #D1DBBD;
+  border-radius: 5px;
+  background-color: white;
+  color: #D1DBBD;
+  width: 545px;
+  font-size: 20px;
+  height: 35px;
+  transition: 0.5s;
+}
+
+#analysis_table{
+  width: 625px;
+  margin: 0 auto 40px auto;
+  background-color: white;
+  color: #193441;
+  font-size: 16px;
+  font-weight: lighter;
+  border: 1px solid #D1DBBD;
+}
+
+#analysis_table tr:nth-child(2n+1), #graph_data tr:nth-child(2n+1) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#analysis_table tr, #graph_data tr {
+  height: 35px;
+}
+
+#analysis_table td, #graph_data td {
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#analysis_table tr:nth-child(1), #graph_data tr:nth-child(1) {
+  color: #193441;
+  font-weight: normal;
+}
+
+.graph_view{
+  text-align:center;
+  width: 626px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #D1DBBD;
+}
+
+.graph_view ul.labels{
+  list-style: none;
+  width: 625px;
+  margin: 0 auto;
+  padding: 0 2px 0 19px;
+}
+
+.graph_view ul.labels li{
+  display:inline-block;
+  font-size: 10px;
+  width: 95px;
+  text-align: center;
+  position: relative;
+  border-top: 2px solid rgb(98, 98, 98);
+  top: -7px;
+}
+
+#bar_graph{
+  background-color: #FCFCFC;
+  width: 622px;
+}
+
+.header {
+  text-align: left;
+  width: 625px;
+  margin: 0 auto;
+  background-color: #3E606F;
+  color: white;
+  font-weight: lighter;
+  font-size: 17px;
+  padding: 5px 10px;
+}
+
+#graph_data{
+  width: 624px;
+  margin: 0 auto 0 auto;
+  background-color: white; color: #193441;
+  font-size: 14px; font-weight: lighter;
+  text-align: left;
+}
+
+#time_stamp {
+  font-size: 10px;
+  color: grey;
+}
+
+#graph_data tr td:nth-child(6) {
+  cursor: pointer;
+}
+
+#graph_data tr td:nth-child(6):hover {
+  color:red;
+}
+
+#graphSwitch {
+  float: right;
+  border: 1px solid #193441;
+  font-size: 13px;
+  background-color: #193441;
+  border-radius: 4px;
+  outline: none;
+}
+
+.bottom_bar #input_submit:hover {
+  color: rgb(62, 96, 111);
+  border: 1px solid rgb(62, 96, 111);
+  transition: 0.5s;
+}
+
+.graph_controller {
+  list-style: none;
+  margin: 5px;
+}
+
+.graph_controller li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.graph_controller button {
+  border: 1px solid rgba(62, 96, 111, 0.44);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.graph_controller li:nth-child(1) {
+  border-bottom: 1px solid rgb(238, 186, 76);
+  border-top: 1px solid rgb(238, 186, 76);
+  color: rgb(238,186,76);
+}
+
+.graph_controller li:nth-child(2) {
+  border-bottom: 1px solid rgb(227, 73, 59);
+  border-top: 1px solid rgb(227, 73, 59);
+  color: rgb(227, 73, 59);
+}
+
+.graph_controller li:nth-child(3) {
+  border-bottom: 1px solid rgb(35, 181, 175);
+  border-top: 1px solid rgb(35, 181, 175);
+  color: rgb(35, 181, 175);
+}
+
+span.error {
+  color: rgb(218, 118, 118);
+  font-size: 11px;
+  position: absolute;
+}

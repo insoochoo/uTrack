@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>UTrack!</title>
+    <link rel="stylesheet" href="css/ext/bootstrap.css"/>
+    <link rel="stylesheet" href="css/utrack.css"/>
+</head>
+<body>
+
+<div id="app_container" class="container uTrack">
+    <div class="top_header">
+        <h1>UTrack</h1>
+        <ul class="top_header_nav">
+            <li id="show_input">Input</li>
+            <li id="show_analysis">Analysis</li>
+        </ul>
+    </div>
+    <div id="input_div">
+        <div class="header">
+          Data input form
+        </div>
+        <ul class="user_input">
+            <li style="width:500px"><span> Activity </span><select id="activity">
+                <option value="wc">writing code</option>
+                <option value="ed">eating dinner</option>
+                <option value="ps">playing sports</option>
+                <option value="se">studying for exams</option>
+                <option value="al">attending lecture</option>
+                <option value="wt">watching tv</option>
+            </select></li>
+            <li><span> Energy level </span><input id="energy_level" placeholder="(1=exhausted, 5=very awake)"></input><span class="error"></span></li>
+            <li><span> Stress level </span><input id="stress_level" placeholder="(1=very stressed, 5=very relaxed)"></input><span class="error"></span></li>
+            <li><span> Happiness level </span><input id="happiness_level" placeholder="(1=depressed, 5=very happy)"></input><span class="error"></span></li>
+            <li><span> Time spent </span><input id="time_spent" placeholder="minutes"></input><span class="error"></span></li>
+        </ul>
+        <div class="bottom_bar">
+            <button id="input_submit">Submit</button><br>
+            <span id="time_stamp"></span>
+        </div>
+    </div>
+    <div id="analysis_div" style="display:none">
+        <div class="header">
+          Summary
+        </div>
+        <table id="analysis_table">
+          <tr>
+            <td>Activities you are tracking</td>
+            <td>time spent (minute)</td>
+          </tr>
+          <tr>
+            <td>Writing code</td>
+            <td id="wc">0</td>
+          </tr>
+          <tr>
+            <td>Eating dinner</td>
+            <td id="ed">0</td>
+          </tr>
+          <tr>
+            <td>Playing sports</td>
+            <td id="ps">0</td>
+          </tr>
+          <tr>
+            <td>Studying for exams</td>
+            <td id="se">0</td>
+          </tr>
+          <tr>
+            <td>Attending lecture</td>
+            <td id="al">0</td>
+          </tr>
+          <tr>
+            <td>Watching tv</td>
+            <td id="wt">0</td>
+          </tr>
+
+        </table>
+        <div class="graph_view">
+          <div class="header">
+            Graph analysis<button id="graphSwitch">show table chart</button>
+          </div>
+          <div id="graph_view_bar">
+              <ul class="graph_controller">
+                <li><input type="checkbox" id="el_checkbox" onchange="redrawBarGraph()" checked>Energy level</li>
+                <li><input type="checkbox" id="sl_checkbox" onchange="redrawBarGraph()" checked>Stress level</li>
+                <li><input type="checkbox" id="hl_checkbox" onchange="redrawBarGraph()" checked>Happiness level</li>
+              </ul>
+              <canvas id="bar_graph">
+                  If you don't have an HTML5-compatible browser, you'll see this text.
+
+                  This canvas object can be removed after you understand canvas basics.
+              </canvas>
+              <ul class="labels">
+                  <li>Writing code</li>
+                  <li>Eating dinner code</li>
+                  <li>Playing sports</li>
+                  <li>Studying for exams</li>
+                  <li>Attending lecture</li>
+                  <li>Watching tv</li>
+              </ul>
+            </div>
+            <div id="graph_view_table" style="display:none">
+                <table id="graph_data">
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="unit_tests">
+        <!-- Keep this here so TAs can run your unit tests -->
+        <a href="unit_tests.html">Run Unit Tests</a>
+    </div>
+
+</div>
+
+<script src="js/ext/underscore.js"></script>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/utrack.js"></script>
+</body>
+</html>
