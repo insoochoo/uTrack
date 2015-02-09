@@ -1,4 +1,4 @@
-The following third-party libraries/code are provided:
+The following third-party libraries/code are used:
 
 - Mocha (http://mochajs.org/)
 - Chai (http://chaijs.com/)
